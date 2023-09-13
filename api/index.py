@@ -19,10 +19,10 @@ from geoalchemy2 import Geometry
 import os
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:wykRJb.HvkkpVn9@db.psujsjvxctszhfxhduzk.supabase.co:5432/postgres"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['CSRF_ENABLED'] = True
-app.config.update(SECRET_KEY=os.urandom(24))
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:wykRJb.HvkkpVn9@db.psujsjvxctszhfxhduzk.supabase.co:5432/postgres"
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# app.config['CSRF_ENABLED'] = True
+# app.config.update(SECRET_KEY=os.urandom(24))
 
 # db = SQLA(app)
 # appbuilder = AppBuilder(app, db.session)
