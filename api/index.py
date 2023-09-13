@@ -1,31 +1,31 @@
 from flask import Flask
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return 'Hello, World!'
-
-@app.route('/about')
-def about():
-    return 'About'
-# from flask import Flask, redirect, url_for
-# from flask_appbuilder import AppBuilder, SQLA
-# from flask_appbuilder.models.sqla.interface import SQLAInterface
-# from flask_appbuilder.views import ModelView
-# from sqlalchemy import Column, String, Boolean, Text, Float, TIMESTAMP, Index, PrimaryKeyConstraint
-# from sqlalchemy.dialects.postgresql import JSONB
-# from geoalchemy2 import Geometry
-# import os
-
 # app = Flask(__name__)
-# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:wykRJb.HvkkpVn9@db.psujsjvxctszhfxhduzk.supabase.co:5432/postgres"
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config['CSRF_ENABLED'] = True
-# app.config.update(SECRET_KEY=os.urandom(24))
 
-# # db = SQLA(app)
-# # appbuilder = AppBuilder(app, db.session)
+# @app.route('/')
+# def home():
+#     return 'Hello, World!'
+
+# @app.route('/about')
+# def about():
+#     return 'About'
+from flask import Flask, redirect, url_for
+from flask_appbuilder import AppBuilder, SQLA
+from flask_appbuilder.models.sqla.interface import SQLAInterface
+from flask_appbuilder.views import ModelView
+from sqlalchemy import Column, String, Boolean, Text, Float, TIMESTAMP, Index, PrimaryKeyConstraint
+from sqlalchemy.dialects.postgresql import JSONB
+from geoalchemy2 import Geometry
+import os
+
+app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:wykRJb.HvkkpVn9@db.psujsjvxctszhfxhduzk.supabase.co:5432/postgres"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['CSRF_ENABLED'] = True
+app.config.update(SECRET_KEY=os.urandom(24))
+
+# db = SQLA(app)
+# appbuilder = AppBuilder(app, db.session)
 
 # # @app.route('/')
 # # def home():
