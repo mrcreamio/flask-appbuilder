@@ -25,7 +25,7 @@ app.config['CSRF_ENABLED'] = True
 app.config.update(SECRET_KEY=os.urandom(24))
 
 db = SQLA(app)
-appbuilder = AppBuilder(app, db.session)
+# appbuilder = AppBuilder(app, db.session)
 
 # @app.route('/')
 # def home():
