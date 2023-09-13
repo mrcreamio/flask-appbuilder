@@ -13,8 +13,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['CSRF_ENABLED'] = True
 app.config.update(SECRET_KEY=os.urandom(24))
 
-db = SQLA(app)
-appbuilder = AppBuilder(app, db.session)
+# db = SQLA(app)
+# appbuilder = AppBuilder(app, db.session)
 
 # @app.route('/')
 # def home():
