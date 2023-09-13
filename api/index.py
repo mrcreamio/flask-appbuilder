@@ -71,7 +71,7 @@ class PoiView(ModelView):
     search_columns = ['id', 'name', 'category', 'subcategory', 'description', 'address_street', 'address_city', 'address_state', 'address_postcode', 'address_country', 'latitude', 'longitude', 'phone', 'website', 'opening_hours', 'operational_status', 'notes']
     related_views = []
 
-appbuilder.add_view(PoiView, "Pois", icon="fa-table")
+# appbuilder.add_view(PoiView, "Pois", icon="fa-table")
 
 if __name__ == '__main__':
     app.run(debug=True)
