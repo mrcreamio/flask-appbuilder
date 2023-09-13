@@ -1,14 +1,3 @@
-from flask import Flask
-
-# app = Flask(__name__)
-
-# @app.route('/')
-# def home():
-#     return 'Hello, World!'
-
-# @app.route('/about')
-# def about():
-#     return 'About'
 from flask import Flask, redirect, url_for
 from flask_appbuilder import AppBuilder, SQLA
 from flask_appbuilder.models.sqla.interface import SQLAInterface
@@ -25,7 +14,10 @@ app.config['CSRF_ENABLED'] = True
 app.config.update(SECRET_KEY=os.urandom(24))
 
 db = SQLA(app)
-# appbuilder = AppBuilder(app, db.session)
+try:
+    appbuilder = AppBuilder(app, db.session)
+except:
+    print("error")
 
 # @app.route('/')
 # def home():
