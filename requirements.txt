@@ -3,3 +3,4 @@ SQLAlchemy==1.4.49
 Jinja2==3.1.2
 Flask-AppBuilder==4.3.6
 GeoAlchemy2==0.14.1
+geoalchemy2
