@@ -14,11 +14,8 @@ app.config['CSRF_ENABLED'] = True
 app.config.update(SECRET_KEY=os.urandom(24))
 
 db = SQLA(app)
-try:
-    appbuilder = AppBuilder(app, db.session)
-except:
-    print("error")
-
+appbuilder = AppBuilder(app, db.session)
+print("appbudier object created")
 # @app.route('/')
 # def home():
 #     return redirect(url_for('PoiModelView.list'))
